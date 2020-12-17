@@ -27,7 +27,7 @@ if w.register(SCRIPT_NAME, SCRIPT_AUTHOR, SCRIPT_VERSION, SCRIPT_LICENSE,
         "input": ("/input return",  "command_run_input"),
     }
     # Hook all hooks !
-    for hook, value in hook_command_run.iteritems():
+    for hook, value in hook_command_run.items():
         w.hook_command_run(value[0], value[1], "")
 
 
@@ -50,7 +50,7 @@ def command_run_input(data, buffer, command):
             if len(yubistring) > 6:
                 yubistring = yubistring[:6]
 
-            if input_s.startswith(yubistring) and len(input_s) == 44:
+            if yubistring in input_s:
                 input_s = ''
 
         # Spit it out
