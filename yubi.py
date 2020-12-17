@@ -14,7 +14,7 @@ import weechat as w
 
 SCRIPT_NAME = "yubi"
 SCRIPT_AUTHOR = "Ben Hughes <w@mumble.org.uk>"
-SCRIPT_VERSION = "0.2"
+SCRIPT_VERSION = "0.3"
 SCRIPT_LICENSE = "BSD"
 SCRIPT_DESC = "Stops you being yubikeyed"
 
